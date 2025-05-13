@@ -113,6 +113,49 @@ Refer to the notebook `src/main.ipynb` for step-by-step implementation of:
 - Evaluation metrics
 - Results visualization
 
+## 🎓 Real-world ML Learning Experience
+
+This project provided valuable insights into building production-ready machine learning systems:
+
+### System Design & Engineering
+- **End-to-End Pipeline Development**: Designed and implemented a complete ML pipeline from data preparation to model deployment
+- **Scalable Data Processing**: Built efficient data pipelines handling 16+ hours of audio data with multiple augmentation steps
+- **Resource Management**: Optimized computational resources for training large models and processing extensive datasets
+- **Version Control**: Maintained code and model versions throughout the development cycle
+
+### Data Engineering Practices
+- **Data Augmentation Pipeline**: 
+  - Implemented room impulse response (RIR) using OpenRIR
+  - Added variable noise levels (0-10 dB SNR)
+  - Created balanced class distributions
+  - Generated synthetic mixtures for robust training
+- **Quality Control**: 
+  - Validated data integrity across pipeline stages
+  - Implemented checks for audio quality and mixing correctness
+  - Ensured consistent data distribution across splits
+
+### ML Development Best Practices
+- **Experiment Management**:
+  - Tracked model performance across different architectures
+  - Maintained systematic hyperparameter tuning logs
+  - Documented failure cases and solutions
+- **Performance Metrics**:
+  - Implemented comprehensive evaluation beyond accuracy
+  - Used domain-specific metrics (SDR, SIR)
+  - Conducted perceptual quality assessments
+- **Model Validation**:
+  - Created separate validation strategies for each component
+  - Tested model robustness across different acoustic conditions
+  - Validated performance on out-of-distribution samples
+
+### Key Learnings
+- Importance of robust data augmentation in real-world performance
+- Critical role of proper train/validation/test splits
+- Value of comprehensive evaluation metrics
+- Necessity of scalable and maintainable code architecture
+- Significance of proper documentation and experiment tracking
+- Balance between model performance and computational efficiency
+
 ## 🔮 Future Work
 
 ### Model Improvements
@@ -142,8 +185,6 @@ Refer to the notebook `src/main.ipynb` for step-by-step implementation of:
 - [ ] Develop plug-and-play solution for video conferencing
 - [ ] Add support for real-time meeting transcription
 - [ ] Implement voice activity detection pre-processing
-
-
 
 ## 📚 References
 
